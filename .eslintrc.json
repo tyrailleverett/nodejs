@@ -10,6 +10,7 @@
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
+    "plugins": ["vitest"],
     "rules": {
         "quotes": ["error", "double"],
         "@typescript-eslint/quotes": ["error", "double"],
