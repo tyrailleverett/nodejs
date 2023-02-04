@@ -17,6 +17,12 @@
         "ext": ".ts",
         "exec": "npx ts-node src/index.ts"
     },
+    "lint-staged": {
+        "*.ts": [
+            "prettier --write .",
+            "eslint ."
+        ]
+    },
     "keywords": [],
     "author": "Tyrail Leverett",
     "license": "ISC",
@@ -31,6 +37,8 @@
         "eslint-plugin-n": "^15.0.0",
         "eslint-plugin-promise": "^6.0.0",
         "eslint-plugin-vitest": "^0.0.32",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
         "nodemon": "^2.0.20",
         "prettier": "^2.8.3",
         "rimraf": "^4.1.2",
